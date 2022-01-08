@@ -2,3 +2,6 @@ nipype
 numpy
 pandas
 pydicom
+databricks
+databricks-connect
+mlflow
