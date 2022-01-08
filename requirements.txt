@@ -2,3 +2,5 @@ nipype
 numpy
 pandas
 pydicom
+matplotlib
+seaborn
