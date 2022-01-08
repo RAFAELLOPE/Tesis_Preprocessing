@@ -1,0 +1,4 @@
+nipype
+numpy
+pandas
+pydicom
