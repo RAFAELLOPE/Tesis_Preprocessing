@@ -5,3 +5,4 @@ pydicom
 databricks
 databricks-connect
 mlflow
+nibabel
