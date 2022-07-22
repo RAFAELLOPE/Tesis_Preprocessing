@@ -28,5 +28,10 @@ databricks clusters list | grep Rafa
 This may fail if you don't have JDK 8 installed. You can install the
 open JDK 8 by visiting this link: https://adoptopenjdk.net/
 ```
-park-submit *etl.py --username FILL_IN_YOUR_USERNAME
+spark-submit *etl.py --username FILL_IN_YOUR_USERNAME
+```
+
+6. Command 'dbsf' of Databricks CLI:
+```
+dbfs cp <origin_file> dbfs:/<destination_file>
 ```
