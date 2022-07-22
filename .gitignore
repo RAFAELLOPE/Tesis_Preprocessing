@@ -5,3 +5,4 @@ data/workflow
 *.csv
 *.nii.gz
 *.dcm
+*.txt
