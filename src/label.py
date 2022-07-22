@@ -1,11 +1,10 @@
 import pandas as pd
 import glob
 import os
-import io
 
-LABEL_FILE_PATH = '~/Tesis/Tesis_Preprocessing/data/neuro_db_labels.csv'
-DB_PATH = '/mnt/d/Tesis/neuro_db'
-LAST_PATIENT_FILE = '/home/rafa/Tesis/Tesis_Preprocessing/data/last_patient.txt'
+LABEL_FILE_PATH = ''
+DB_PATH = ''
+LAST_PATIENT_FILE = ''
 
 def search_for_keyword(report_path:str, key_word:str) -> bool:
     if os.path.exists(report_path):
