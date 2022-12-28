@@ -133,6 +133,8 @@ def manage_arguments():
                         type=str,
                         required=True,
                         default='')
+    args=parser.parse_args()
+    return args
 
 def main(args):
     neuro_db_csv_path = args.neuro_db_file
@@ -151,7 +153,7 @@ def main(args):
                                        'Image Plane': 'ImagePlane'
                                      })
     df_comments['SeriesDescription'] = df_comments['SeriesDescription'].apply(lambda x: str(x).strip())
-    df_neuro = pd.read_csv('~/Tesis/Tesis_Preprocessing/data/neuro_db_metadata_new.csv')
+    df_neuro = pd.read_csv(os.path.join(neuro_db_csv_path, 'neuro_db_metadata_new.csv'))
     df_neuro_new = remove_series_with_low_slices(df_neuro)
     # Remove every sagittal T2 and outliers
     df_neuro_new = remove_outliers(df_comments, df_neuro)
