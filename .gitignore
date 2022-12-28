@@ -1,5 +1,6 @@
 env
-data/workflow
+data/
+analysis_scripts/
 *.json
 *.ipynb
 *.csv

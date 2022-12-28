@@ -6,3 +6,4 @@ databricks
 databricks-connect
 mlflow
 nibabel
+scikit-learn
