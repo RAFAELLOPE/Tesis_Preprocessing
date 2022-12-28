@@ -1,6 +1,7 @@
 env
 data/
 analysis_scripts/
+log/results.log
 *.json
 *.ipynb
 *.csv
